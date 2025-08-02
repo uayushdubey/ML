@@ -282,7 +282,7 @@ This dashboard shows you <b>AI predictions</b> for Indian stock market investmen
 """, unsafe_allow_html=True)
 
 # File path
-excel_file_path = r"D:\CrazySoft\Model_Output_Screen\filtered_30_07_25_data.xlsx"
+excel_file_path = r"filtered_30_07_25_data.xlsx"
 
 try:
     # Read from default path
@@ -752,4 +752,5 @@ else:
     - UP_Prob, DOWN_Prob, NEUTRAL_Prob: Probability percentages
     - Predicted_Open_Price: Expected opening price
     - Predicted_Close_Price: Expected closing price
+
     """)
