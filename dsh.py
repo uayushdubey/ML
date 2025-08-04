@@ -211,84 +211,6 @@ st.markdown("""
     color: #000000 !important;
 }
 
-/* Specific styling for dvn-scroller stDataFrameGlideDataEditor */
-.dvn-scroller.stDataFrameGlideDataEditor {
-    background-color: #1e1e1e !important; /* Dark background */
-    color: #ffffff !important; /* White text for contrast */
-    border-radius: 8px !important;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2) !important;
-    overflow: visible !important; /* Ensure content is not clipped */
-}
-
-.dvn-scroller.stDataFrameGlideDataEditor table {
-    background-color: #1e1e1e !important;
-    color: #ffffff !important;
-    border-collapse: collapse !important;
-    width: 100% !important;
-}
-
-.dvn-scroller.stDataFrameGlideDataEditor thead th {
-    background-color: #333333 !important; /* Slightly lighter dark for headers */
-    color: #ffffff !important;
-    font-weight: bold !important;
-    border-bottom: 2px solid #0066cc !important;
-    border-right: 1px solid #555555 !important;
-    padding: 12px 8px !important;
-    text-align: center !important;
-    font-size: 14px !important;
-}
-
-.dvn-scroller.stDataFrameGlideDataEditor tbody td {
-    background-color: #2a2a2a !important; /* Darker shade for cells */
-    color: #ffffff !important;
-    padding: 10px 8px !important;
-    border-bottom: 1px solid #555555 !important;
-    border-right: 1px solid #555555 !important;
-    text-align: center !important;
-    font-weight: 500 !important;
-    font-size: 13px !important;
-    opacity: 1 !important; /* Ensure no transparency issues */
-}
-
-.dvn-scroller.stDataFrameGlideDataEditor tbody tr {
-    background-color: #2a2a2a !important;
-    color: #ffffff !important;
-}
-
-.dvn-scroller.stDataFrameGlideDataEditor tbody tr:hover {
-    background-color: #3c3c3c !important; /* Slightly lighter on hover */
-}
-
-.dvn-scroller.stDataFrameGlideDataEditor tbody tr:hover td {
-    color: #ffffff !important;
-}
-
-/* Colored row styling for dvn-scroller with adjusted colors */
-.dvn-scroller.stDataFrameGlideDataEditor tbody tr:contains("📈 BUY/HOLD") td {
-    background-color: #006400 !important; /* Dark green */
-    color: #ffffff !important; /* White text for contrast */
-    font-weight: 600 !important;
-}
-
-.dvn-scroller.stDataFrameGlideDataEditor tbody tr:contains("📉 SELL/AVOID") td {
-    background-color: #8B0000 !important; /* Dark red */
-    color: #ffffff !important; /* White text for contrast */
-    font-weight: 600 !important;
-}
-
-.dvn-scroller.stDataFrameGlideDataEditor tbody tr:contains("➡️ NEUTRAL") td {
-    background-color: #9B870C !important; /* Dark yellow */
-    color: #ffffff !important; /* White text for contrast */
-    font-weight: 600 !important;
-}
-
-/* Ensure all text in dvn-scroller is visible */
-.dvn-scroller.stDataFrameGlideDataEditor * {
-    color: #ffffff !important;
-    visibility: visible !important;
-    display: block !important;
-}
-
 /* Target specific Streamlit dataframe containers */
 div[data-testid="stDataFrame"] {
     background-color: #ffffff !important;
@@ -832,6 +754,7 @@ else:
     - Predicted_Close_Price: Expected closing price
 
     """)
+
 
 
 
