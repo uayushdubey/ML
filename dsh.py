@@ -211,6 +211,85 @@ st.markdown("""
     color: #000000 !important;
 }
 
+/* Specific styling for dvn-scroller stDataFrameGlideDataEditor */
+.dvn-scroller.stDataFrameGlideDataEditor {
+    background-color: #1e1e1e !important; /* Dark background */
+    color: #ffffff !important; /* White text for contrast */
+    border-radius: 8px !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2) !important;
+}
+
+.dvn-scroller.stDataFrameGlideDataEditor table {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+}
+
+.dvn-scroller.stDataFrameGlideDataEditor thead th {
+    background-color: #333333 !important; /* Slightly lighter dark for headers */
+    color: #ffffff !important;
+    font-weight: bold !important;
+    border-bottom: 2px solid #0066cc !important;
+    border-right: 1px solid #555555 !important;
+    padding: 12px 8px !important;
+    text-align: center !important;
+    font-size: 14px !important;
+}
+
+.dvn-scroller.stDataFrameGlideDataEditor tbody td {
+    background-color: #2a2a2a !important; /* Darker shade for cells */
+    color: #ffffff !important;
+    padding: 10px 8px !important;
+    border-bottom: 1px solid #555555 !important;
+    border-right: 1px solid #555555 !important;
+    text-align: center !important;
+    font-weight: 500 !important;
+    font-size: 13px !important;
+}
+
+.dvn-scroller.stDataFrameGlideDataEditor tbody tr {
+    background-color: #2a2a2a !important;
+    color: #ffffff !important;
+}
+
+.dvn-scroller.stDataFrameGlideDataEditor tbody tr:hover {
+    background-color: #3c3c3c !important; /* Slightly lighter on hover */
+}
+
+.dvn-scroller.stDataFrameGlideDataEditor tbody tr:hover td {
+    color: #ffffff !important;
+}
+
+/* Colored row styling for dvn-scroller with white text */
+.dvn-scroller.stDataFrameGlideDataEditor tbody tr[style*="background-color: #d4edda"] td {
+    background-color: #d4edda !important;
+    color: #000000 !important; /* Black text for contrast on green */
+    font-weight: 600 !important;
+}
+
+.dvn-scroller.stDataFrameGlideDataEditor tbody tr[style*="background-color: #f8d7da"] td {
+    background-color: #f8d7da !important;
+    color: #000000 !important; /* Black text for contrast on red */
+    font-weight: 600 !important;
+}
+
+.dvn-scroller.stDataFrameGlideDataEditor tbody tr[style*="background-color: #fff3cd"] td {
+    background-color: #fff3cd !important;
+    color: #000000 !important; /* Black text for contrast on yellow */
+    font-weight: 600 !important;
+}
+
+/* Ensure all text in dvn-scroller is white unless overridden */
+.dvn-scroller.stDataFrameGlideDataEditor * {
+    color: #ffffff !important;
+}
+
+/* Override for colored rows to maintain black text */
+.dvn-scroller.stDataFrameGlideDataEditor tbody tr[style*="background-color: #d4edda"] *,
+.dvn-scroller.stDataFrameGlideDataEditor tbody tr[style*="background-color: #f8d7da"] *,
+.dvn-scroller.stDataFrameGlideDataEditor tbody tr[style*="background-color: #fff3cd"] * {
+    color: #000000 !important;
+}
+
 /* Target specific Streamlit dataframe containers */
 div[data-testid="stDataFrame"] {
     background-color: #ffffff !important;
@@ -754,4 +833,5 @@ else:
     - Predicted_Close_Price: Expected closing price
 
     """)
+
 
