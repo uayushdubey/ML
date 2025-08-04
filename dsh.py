@@ -62,9 +62,9 @@ st.markdown("""
 
 /* Color coding for predictions - high contrast */
 .profit-green {
-    color: #333333;
+    color: #ffffff;
     font-weight: bold;
-    background-color: #006400;
+    background-color: #004d00;
     padding: 2px 6px;
     border-radius: 4px;
 }
@@ -72,7 +72,7 @@ st.markdown("""
 .loss-red {
     color: #ffffff;
     font-weight: bold;
-    background-color: #8B0000;
+    background-color: #660000;
     padding: 2px 6px;
     border-radius: 4px;
 }
@@ -80,7 +80,7 @@ st.markdown("""
 .neutral-orange {
     color: #ffffff;
     font-weight: bold;
-    background-color: #9B870C;
+    background-color: #806e00;
     padding: 2px 6px;
     border-radius: 4px;
 }
@@ -754,6 +754,7 @@ else:
     - Predicted_Close_Price: Expected closing price
 
     """)
+
 
 
 
