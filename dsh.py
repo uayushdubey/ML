@@ -62,7 +62,7 @@ st.markdown("""
 
 /* Color coding for predictions - high contrast */
 .profit-green {
-    color: #ffffff;
+    color: #333333;
     font-weight: bold;
     background-color: #006400;
     padding: 2px 6px;
@@ -754,6 +754,7 @@ else:
     - Predicted_Close_Price: Expected closing price
 
     """)
+
 
 
 
