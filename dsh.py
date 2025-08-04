@@ -282,7 +282,7 @@ This dashboard shows you <b>AI predictions</b> for Indian stock market investmen
 """, unsafe_allow_html=True)
 
 # File path
-excel_file_path = r"filtered_30_07_25_data.xlsx"
+excel_file_path = r"filtered_04_08_25_data.xlsx"
 
 try:
     # Read from default path
@@ -754,3 +754,4 @@ else:
     - Predicted_Close_Price: Expected closing price
 
     """)
+
