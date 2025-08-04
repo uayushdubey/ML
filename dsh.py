@@ -64,7 +64,7 @@ st.markdown("""
 .profit-green {
     color: #ffffff;
     font-weight: bold;
-    background-color: #00b300;
+    background-color: #006400;
     padding: 2px 6px;
     border-radius: 4px;
 }
@@ -72,7 +72,7 @@ st.markdown("""
 .loss-red {
     color: #ffffff;
     font-weight: bold;
-    background-color: #cc0000;
+    background-color: #8B0000;
     padding: 2px 6px;
     border-radius: 4px;
 }
@@ -80,7 +80,7 @@ st.markdown("""
 .neutral-orange {
     color: #ffffff;
     font-weight: bold;
-    background-color: #ff8800;
+    background-color: #9B870C;
     padding: 2px 6px;
     border-radius: 4px;
 }
@@ -754,6 +754,7 @@ else:
     - Predicted_Close_Price: Expected closing price
 
     """)
+
 
 
 
