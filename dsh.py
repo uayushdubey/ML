@@ -217,11 +217,14 @@ st.markdown("""
     color: #ffffff !important; /* White text for contrast */
     border-radius: 8px !important;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2) !important;
+    overflow: visible !important; /* Ensure content is not clipped */
 }
 
 .dvn-scroller.stDataFrameGlideDataEditor table {
     background-color: #1e1e1e !important;
     color: #ffffff !important;
+    border-collapse: collapse !important;
+    width: 100% !important;
 }
 
 .dvn-scroller.stDataFrameGlideDataEditor thead th {
@@ -244,6 +247,7 @@ st.markdown("""
     text-align: center !important;
     font-weight: 500 !important;
     font-size: 13px !important;
+    opacity: 1 !important; /* Ensure no transparency issues */
 }
 
 .dvn-scroller.stDataFrameGlideDataEditor tbody tr {
@@ -259,35 +263,30 @@ st.markdown("""
     color: #ffffff !important;
 }
 
-/* Colored row styling for dvn-scroller with white text */
-.dvn-scroller.stDataFrameGlideDataEditor tbody tr[style*="background-color: #d4edda"] td {
-    background-color: #d4edda !important;
-    color: #000000 !important; /* Black text for contrast on green */
+/* Colored row styling for dvn-scroller with adjusted colors */
+.dvn-scroller.stDataFrameGlideDataEditor tbody tr:contains("📈 BUY/HOLD") td {
+    background-color: #006400 !important; /* Dark green */
+    color: #ffffff !important; /* White text for contrast */
     font-weight: 600 !important;
 }
 
-.dvn-scroller.stDataFrameGlideDataEditor tbody tr[style*="background-color: #f8d7da"] td {
-    background-color: #f8d7da !important;
-    color: #000000 !important; /* Black text for contrast on red */
+.dvn-scroller.stDataFrameGlideDataEditor tbody tr:contains("📉 SELL/AVOID") td {
+    background-color: #8B0000 !important; /* Dark red */
+    color: #ffffff !important; /* White text for contrast */
     font-weight: 600 !important;
 }
 
-.dvn-scroller.stDataFrameGlideDataEditor tbody tr[style*="background-color: #fff3cd"] td {
-    background-color: #fff3cd !important;
-    color: #000000 !important; /* Black text for contrast on yellow */
+.dvn-scroller.stDataFrameGlideDataEditor tbody tr:contains("➡️ NEUTRAL") td {
+    background-color: #9B870C !important; /* Dark yellow */
+    color: #ffffff !important; /* White text for contrast */
     font-weight: 600 !important;
 }
 
-/* Ensure all text in dvn-scroller is white unless overridden */
+/* Ensure all text in dvn-scroller is visible */
 .dvn-scroller.stDataFrameGlideDataEditor * {
     color: #ffffff !important;
-}
-
-/* Override for colored rows to maintain black text */
-.dvn-scroller.stDataFrameGlideDataEditor tbody tr[style*="background-color: #d4edda"] *,
-.dvn-scroller.stDataFrameGlideDataEditor tbody tr[style*="background-color: #f8d7da"] *,
-.dvn-scroller.stDataFrameGlideDataEditor tbody tr[style*="background-color: #fff3cd"] * {
-    color: #000000 !important;
+    visibility: visible !important;
+    display: block !important;
 }
 
 /* Target specific Streamlit dataframe containers */
@@ -833,5 +832,6 @@ else:
     - Predicted_Close_Price: Expected closing price
 
     """)
+
 
 
